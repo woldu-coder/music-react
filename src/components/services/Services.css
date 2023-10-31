@@ -1,0 +1,74 @@
+.services{
+    padding-top: 50px;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.services-container{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 20px;
+}
+.services-container_card{
+    width: 300px;
+    height: 330px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 1px 5px rgba(23, 49, 66, .6);
+    margin: 40px 20px;
+    transition: all 1s ease-in-out;
+}
+.services-container_card-title{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: transparent
+}
+
+.services-container_card-description{
+    height: 270px;
+    padding: 10px;
+    bottom: 20px;
+    background-color: rgb(228, 187, 187);
+    border-radius: 10px;
+    margin: 2px 3px;
+}
+.services-container_card-footer{
+    width: 100%;
+    border-radius: 10px;
+    /* background-color: green; */
+    bottom: 2px;
+}
+.services-container_card-footer_list{
+    display: flex;
+    justify-content: space-around;
+    bottom: 2px;
+}
+
+.services-container_card:hover{
+    box-shadow: none;
+    cursor: pointer;
+    box-shadow: 2px 3px red;
+}
+.services-container_card-footer_list .like:hover{
+    font-size: 22px;
+    color: blue;
+    transition: all 1s ease;
+}
+.services-container_card-footer_list .comment:hover{
+    font-size: 22px;
+    color: rgb(255, 0, 0);
+    transition: all 1s ease;
+}
+.services-container_card-footer_list .share:hover{
+    font-size: 22px;
+    color: rgb(0, 255, 38);
+    transition: all 1s ease;
+}
+.services-container_card-footer_list .button-card{
+    font-size: 22px;
+    transition: all 1s ease-in-out;
+}

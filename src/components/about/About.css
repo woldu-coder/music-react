@@ -1,0 +1,86 @@
+.about{
+    padding: 20px 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.about-container{
+    margin: 30px;
+    padding: 50px;
+}
+.about_us{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 1px 2px 1px 3px green;
+    transition: all 1s ease-in-out;
+}
+
+.about_us-image{
+    width: 300px;
+    height: 300px; 
+    margin: 10px;
+    background-color: rgba(146, 165, 224, 0.73);
+    border-radius: 50%;
+    box-shadow: 1px 2px 1px 2px rgba(74, 28, 213, 0.8);
+}
+.about_us-image img{
+    width: 100%;
+    height: 70%;
+    border-radius: 50%;
+}
+.about_us-description{
+    width: 60%;
+    height: auto;
+    margin: 10px 10px;
+    padding: 30px;
+    /* background-color: aquamarine; */
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 2px rgba(192, 213, 225, 0.634);
+    text-align: start;
+}
+
+.about_us:hover .about_us-description{
+    box-shadow: 2px 2px 4px 1px rgba(193, 116, 116, 0.562);
+}
+.about_us-description_end{
+    margin-top: 90px;
+    text-align: end;
+    width: 100%;
+    height: 100%;
+}
+.btn__read_more{
+    width: 120px;
+    height: 40px;
+    margin-top: 40px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(192, 213, 225, 0.634);
+    transition: all 1s ease-in-out;
+}
+
+.btn__read_more:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .about-container{
+        margin: 0px;
+        padding: 0px;
+    }
+    .about_us{
+        margin: 5px;
+        padding: 5px;
+        width: 100%;
+    }
+    .about_us-description{
+        width: 100%;
+    }
+    
+}

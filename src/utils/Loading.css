@@ -1,0 +1,12 @@
+.loading__bar{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20%;
+    background-color: rgba(237, 247, 247, 0.762);
+}
+.loading__bar img{
+    width: 20%;
+    height: 20%;
+}

@@ -1,0 +1,18 @@
+.notfound__page{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    background-color: transparent;
+}
+.notfound__page_container{
+    margin: 50px;
+    align-items: center;
+}
+.notfound__page_container h1{
+    font-size: 66px;
+}
+.notfound__page_container p{
+    font: 44px;
+}

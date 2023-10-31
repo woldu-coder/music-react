@@ -1,0 +1,29 @@
+.footer{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: rgba(31, 18, 86, 0.367);
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.footer-container{
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: row;
+}
+.footer-social li{
+    margin: 2px 5px;
+}
+

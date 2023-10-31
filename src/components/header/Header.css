@@ -1,0 +1,201 @@
+.header{
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    /* background-image: url("../../assets/images/singing.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.header-container{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-container_left{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    background-color: rgba(31, 27, 47, 0.062);
+    border-radius: 50%;
+}
+.header-container_left h1{
+    font-size: 35px;
+    color: var(--colorWhite);
+    padding: 22px;
+}
+.header-container_left p{
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: var(--colorWhite);
+}
+.header-container_left button{
+    font-size: 25px;
+    color: var(--colorWhite);
+    background-color: var(--bgColor);
+    cursor: pointer;
+}
+
+
+.header__left_animate1{
+    width: 47%;
+    height: 40%;
+    position: absolute;
+    background-color: rgba(63, 99, 185, 0.39);
+    z-index: -1;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+.header__left_animate11{
+    width: 0;
+    height: 0;
+    left: 30px;
+    top: 450px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(32, 76, 148, 0.679);
+    animation: animate11 5s ease-in-out infinite;
+}
+.header__left_animate11 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.header__left_animate12 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+@keyframes animate11 {
+
+
+    0%{width: 0;height: 0;left: 30px;top: 450px;}
+    50%{width: 50px;height: 50px;left: 500px;top: 300px;}
+    
+}
+.header__left_animate12{
+    width: 0;
+    height: 0;
+    left: 750px;
+    top: 450px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(83, 26, 149);
+    animation: animate12 6s ease-in-out infinite;
+}
+
+@keyframes animate12 {
+    0%{width: 0;height: 0;left: 750px;top: 450px;}
+    20%{width: 50px;height: 50px;left: 600px;top: 350px;}
+    50%{width: 50px;height: 50px;left: 500px;top: 300px;}   
+}
+
+
+
+
+
+.login__header{
+    font-size: 23px;
+    color: blue;
+}
+
+
+
+
+
+.header__left_animate2{
+    width: 47%;
+    height: 40%;
+    position: absolute;
+    background-color: rgba(20, 25, 72, 0.394);
+    z-index: -1;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    /* animation: animate2 2s ease-in-out infinite; */
+}
+
+.header__left_animate1{
+    right: 0; 
+    animation: animate1 4s ease-in-out infinite; 
+}
+@keyframes animate1 {
+    0%{right: 0;}
+    5%{right: 5px;}
+    10%{right: 10px;}
+    
+}
+
+.header__right_animate11{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header-container_right{
+    flex: 1;
+}
+.header-container_right img{
+    width: 100%;
+    height: 100%;
+    animation: globeAnimate 6s ease-in-out infinite;
+}
+@keyframes globeAnimate {
+    0%{
+        width: 100%;
+        height: 100%;
+    }
+    5%{
+        width: 99%;
+        height: 99%;
+    }
+    10%{
+        width: 98%;
+        height: 98%;
+    }
+    
+}
+@media screen and (max-width: 750px) {
+    .animations{
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .header-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .header-container_left p{
+        letter-spacing: 1px;
+        line-height: 25px;
+    }
+
+}

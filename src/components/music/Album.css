@@ -1,0 +1,69 @@
+.music{
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.music-container{
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.music-container_list{
+    width: 400px;
+    height: 500px;
+    min-width: 300px;
+    background-color: rgba(118, 180, 230, 0.795);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin: 20px;
+    padding: 20px;
+}
+.music-container_list-title{
+    padding: 5px;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(48, 91, 245, 0.74);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.music-artist_img{
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+}
+.music-container_list-body{
+    width: 100%;
+    height: 380px;
+    margin: 10px 0;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
+.music-container_list-body img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.music-container_list-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.music-container_list-footer .btn__footer{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+}
