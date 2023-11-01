@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+
 import { AiOutlineLike, AiOutlineEye, AiOutlineMessage, AiOutlineShareAlt } from 'react-icons/ai'
 import "./Album.css"
+import loadingImg from "../../assets/images/loading.gif"
 import axios from 'axios'
-
+import "../../utils/Loading.css"
 
 
 
@@ -12,13 +14,18 @@ const Musics = () => {
   const [musics, setMusics] = useState(null)
   const [searchMusic, setSearchMusic] = useState('')
   useEffect(()=>{
-      axios.get(`https://my-music-sfte.onrender.com/api/album/${id}`)
-      .then(res => setMusics(res.data))
-      .catch(error => console.log("errors: ",error))
+      let getMusics = async ()=>{
+       await axios.get(`https://my-music-sfte.onrender.com/api/album/${id}`)
+        .then(res => setMusics(res.data))
+        .catch(error => console.log("errors: ",error))
+      }
+      getMusics()
   }, [id])
 
   if (musics === null) {
-    return <div><h1>Loading...</h1></div>;
+    return <div className='loading__bar'>
+            <h1><img src={loadingImg} alt="loading" /></h1>
+        </div>;
   }
   let handleMusicLike = ()=>{
     alert("This functionality is under processing!")
@@ -44,7 +51,7 @@ const Musics = () => {
                     </li>
                 </ul>
                 <div className='music-container_list-body'>
-                    <img src={musics.avatar} alt="album name"/>
+                    <img src={musics.imageURL} alt="album name"/>
                 </div>
                 <div className='music-container_list-footer'>
                     <div><button className='btn__footer like' onClick={handleMusicLike}>{23} <AiOutlineLike/></button></div>
