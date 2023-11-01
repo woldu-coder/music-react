@@ -8,7 +8,7 @@ const Services = () => {
   const [albums, setAlbums] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
   useEffect(()=>{
-      axios.get("https://music-osvg.onrender.com/api/album")
+      axios.get("https://my-music-sfte.onrender.com/api/album")
       .then(res => setAlbums(res.data))
       .catch(error => console.log("errors: ",error))
   }, [])
