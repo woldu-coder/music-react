@@ -30,8 +30,13 @@ const Navbar = () => {
         </ul>
         <ul className='navbar__container_right'>
           {user ? <li className='navbar__container_right-login'><button type='button' onClick={logoutUser}>Logout</button></li> : <li className='navbar__container_right-login'><Link to="/login">Login</Link></li>}
-          {user ? <p className='navbar__username'>{user.username === "woldu" ? <Link target='_blank' to="https://my-music-sfte.onrender.com/wolduadmin/">SuperAdmin</Link> : <p>Staff</p>}</p>: <li className='navbar__container_right-login'><Link to="/signup">Signup</Link></li>}
+          {/* {user ? <p className='navbar__username'>{user.is_superuser  ? <Link target='_blank' to="https://my-music-sfte.onrender.com/wolduadmin/">SuperAdmin</Link> : <Link to="https://my-music-sfte.onrender.com/admin/">Admin</Link>}</p>: <li className='navbar__container_right-login'><Link to="/signup">Signup</Link></li>} */}
+          { user ? <li className='navbar__container_right-login'>{user.is_superuser ? <Link to="https://my-music-sfte.onrender.com/wolduadmin/">AdminSuper</Link>
+                                                                                    :<Link to="https://my-music-sfte.onrender.com/admin/">Admin</Link>
+                                                                                                      
+                                                                                    }</li> 
           
+                  : <li></li>}
         </ul>
         <div className='navbar__menu'>
             { toggleMenu 
