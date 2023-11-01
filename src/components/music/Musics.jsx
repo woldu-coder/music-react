@@ -12,7 +12,7 @@ const Musics = () => {
   const [musics, setMusics] = useState(null)
   const [searchMusic, setSearchMusic] = useState('')
   useEffect(()=>{
-      axios.get(`https://music-osvg.onrender.com/api/album/${id}`)
+      axios.get(`https://my-music-sfte.onrender.com/api/album/${id}`)
       .then(res => setMusics(res.data))
       .catch(error => console.log("errors: ",error))
   }, [id])
