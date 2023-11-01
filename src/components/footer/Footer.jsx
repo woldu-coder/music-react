@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   const [albums, setAlbums] = useState([]);
   useEffect(()=>{
-      axios.get("http://127.0.0.1:8000/api/album")
+      axios.get("https://my-music-sfte.onrender.com/api/album")
       .then(res => setAlbums(res.data))
       .catch(error => console.log("errors: ",error))
   }, [])
